@@ -145,15 +145,43 @@ class Graph {
 }
 
 class Node {
+  String _description = '';
+  
+  String get getDescription{
+    return _description;
+  }
+
+  set setDescription(String value) {
+      if (value.isNotEmpty) {
+          _description = value;
+      }
+  }
+
   ValueKey? key;
+  
+  dynamic get getKey{
+    return key;
+  }
+
+  int parentId=0;
+
+  int get getParentId {
+    return parentId;
+  }
+
+  set setParentId(int value) {
+    parentId = value;
+  }
 
   @Deprecated('Please use the builder and id mechanism to build the widgets')
   Widget? data;
 
-  @Deprecated('Please use the Node.Id')
-  Node(this.data, {Key? key}) {
-    this.key = ValueKey(key?.hashCode ?? data.hashCode);
-  }
+  // @Deprecated('Please use the Node.Id')
+  // Node(this.data, {Key? key}) {
+  //   this.key = ValueKey(key?.hashCode ?? data.hashCode);
+  // }
+
+  Node();
 
   Node.Id(dynamic id) {
     key = ValueKey(id);
