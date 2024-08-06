@@ -138,36 +138,6 @@ class _TreeViewPageState extends State<TreeViewPage> {
         createCousin(nodeCount + 1);
         createCousin(nodeCount + 1);
 
-        // Node cousin1_node = Node.Id(nodeCount + 2);
-        // cousin1_node.setDescription = 'Cousin';
-        // cousin1_node.setParentId = uncle_node.key?.value;
-        // graph.addEdge(uncle_node, cousin1_node);
-
-        // Node cousin2_node = Node.Id(nodeCount + 3);
-        // cousin2_node.setDescription = 'Cousin';
-        // cousin2_node.setParentId = uncle_node.key?.value;
-        // graph.addEdge(uncle_node, cousin2_node);
-
-        // Node son1_node = Node.Id(nodeCount + 4);
-        // son1_node.setDescription = 'Son';
-        // son1_node.setParentId = cousin1_node.key?.value;
-        // graph.addEdge(cousin1_node, son1_node);
-
-        // Node daughter1_node = Node.Id(nodeCount + 5);
-        // daughter1_node.setDescription = 'Daugther';
-        // daughter1_node.setParentId = cousin1_node.key?.value;
-        // graph.addEdge(cousin1_node, daughter1_node);
-
-        // Node son2_node = Node.Id(nodeCount + 6);
-        // son2_node.setDescription = 'Son';
-        // son2_node.setParentId = cousin2_node.key?.value;
-        // graph.addEdge(cousin2_node, son2_node);
-
-        // Node daughter2_node = Node.Id(nodeCount + 7);
-        // daughter2_node.setDescription = 'Daughter';
-        // daughter2_node.setParentId = cousin2_node.key?.value;
-        // graph.addEdge(cousin2_node, daughter2_node);
-
         setState(() {});
   }
 
